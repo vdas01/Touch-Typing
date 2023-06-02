@@ -1,0 +1,12 @@
+.dashboard{
+    background-color: pink;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    width: 90vw;
+    box-shadow: 7px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 5px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}

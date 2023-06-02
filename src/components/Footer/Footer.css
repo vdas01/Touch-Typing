@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+
+    padding: 10px 3rem;
+    margin: 10px ;
+    
+    min-width:100vw;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}

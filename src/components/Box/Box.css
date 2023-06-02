@@ -1,0 +1,29 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: bisque;
+   padding: 10px;
+   border-radius: 10px;
+   width: 400px;
+   cursor: pointer;
+}
+.box:hover{
+    box-shadow: 4px 3px 5px 1px rgba(23,23,24,0.75);
+-webkit-box-shadow: 4px 3px 5px 1px rgba(23,23,24,0.75);
+-moz-box-shadow: 4px 3px 5px 1px rgba(23,23,24,0.75);
+border-bottom: 4px solid blueviolet;
+border-bottom-style: inset;
+}
+#img{
+    font-size: 1.7rem;
+}
+#title{
+    font-weight: bold;
+    color: black;
+}
+#desc{
+    font-weight:400;
+    color: rgb(88, 87, 87);
+}

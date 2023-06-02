@@ -1,0 +1,33 @@
+.timer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    align-items: center;
+}
+#time{
+    font-size: 50px;
+    background-color: black;
+    color: goldenrod;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+
+    box-shadow: 5px 4px 5px 0px rgba(2,0,0,0.75);
+-webkit-box-shadow: 5px 4px 5px 0px rgba(2,0,0,0.75);
+-moz-box-shadow: 5px 4px 5px 0px rgba(2,0,0,0.75);
+}
+.btn{
+    padding: 10px 10px;
+    background-color: black;
+    color: goldenrod;
+    cursor: pointer;
+
+    box-shadow: 5px 4px 5px 0px rgba(2,0,0,0.75);
+-webkit-box-shadow: 5px 4px 5px 0px rgba(2,0,0,0.75);
+-moz-box-shadow: 5px 4px 5px 0px rgba(2,0,0,0.75);
+}
+.btn:hover{
+    color: black;
+    background-color: goldenrod;
+}
+
