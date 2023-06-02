@@ -1,6 +1,5 @@
 import React from 'react'
-import { MdDashboardCustomize } from "react-icons/md";
-import {  BsFillClockFill } from "react-icons/bs";
+
 import "./Box.css"
 import { Link } from 'react-router-dom';
 

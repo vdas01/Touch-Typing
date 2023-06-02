@@ -4,7 +4,7 @@ import {FcPrevious,FcNext } from "react-icons/fc";
 import { videos } from '../../utils';
 
 const Video = ({src,index,setIndex}) => {
-   const arr = new Array(10);
+
    var video_id = document.getElementById("video");
    video_id?.addEventListener("ended", function() {
    

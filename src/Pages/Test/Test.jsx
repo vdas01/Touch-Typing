@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import "./Test.css"
 import MyTimer from '../../components/Timer/Timer';
-import { Modal, Button, Text, Input, Row, Checkbox } from "@nextui-org/react";
-import Footer from '../../components/Footer/Footer';
+
 
 
 
@@ -97,7 +96,7 @@ const Test = () => {
             </div>
             <div id="keys_box">
                 {initialkeys.map((ele,i)=>(
-                    <span className="text" id={i}>{ele}</span>
+                    <span className="text" id={i} key={Math.random()}>{ele}</span>
                 ))
                }
             </div>
