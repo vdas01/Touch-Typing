@@ -29,3 +29,14 @@
         align-items: center;
         padding: 1px 15px;
 }
+@media screen and (max-width: 342px){
+    #logo_img{
+       
+    }
+    #logo_text{
+          font-size: 1.2rem;
+    }
+    .navbar{
+        gap: 10px;
+    }
+}

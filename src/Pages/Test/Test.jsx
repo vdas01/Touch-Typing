@@ -88,7 +88,7 @@ const Test = () => {
     <div className='test'>
     { <>
         <div className="container">
-            <h2>Analyze your typing speed in {para.type}</h2>
+            <h2 id='test_title'>Analyze your typing speed in {para.type}</h2>
             <MyTimer expiryTimestamp={time} duration={duration} setInputdisabled={setInputdisabled} correct={correct.current}
                    wrong={wrong.current} accuracy={accuracy} setShowalert={setShowalert} showalert={showalert} setSpeed={setSpeed}/>
             <div className="text_info">

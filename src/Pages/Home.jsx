@@ -6,8 +6,8 @@ import Dashboard from '../components/Dashboard/Dashboard'
 const Home = () => {
   return (
     <div className='home'>
-      <h2>Online Typing Speed Test Tool</h2>
-      <h3>Practice with custom timer and become the fastest TypingNinja</h3>
+      <h2 id='home_title'>Online Typing Speed Test Tool</h2>
+      <h3 id='home_desc'>Practice with custom timer and become the fastest TypingNinja</h3>
       <Dashboard/>
    
     </div>

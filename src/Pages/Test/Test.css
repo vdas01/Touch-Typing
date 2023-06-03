@@ -101,3 +101,16 @@ box-shadow: 7px 5px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 7px 5px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 7px 5px 5px 0px rgba(0,0,0,0.75);
 }
+@media screen and (max-width: 602px){
+    #correct_info,#wrong_info,#accuracy_info,#time_input{
+        padding:1px;
+        font-size: 9px;
+    }
+    .text_info{
+        padding: 2%;
+        gap:6%;
+    }
+    #test_title{
+        font-size: 1.5rem;
+    }
+}

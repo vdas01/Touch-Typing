@@ -9,14 +9,11 @@ const Tutorial = () => {
     <div className='tutorial'>
 
        <h2>Learn Grow and Become a TypingNinja</h2>
-       <div className="video_container">
-        
-        
-         <div className="video">
+       
+         <div className="videoo">
             <Video src={videos[index]} index={index} setIndex={setIndex}/>
          </div>
          
-       </div>
     </div>
   )
 }

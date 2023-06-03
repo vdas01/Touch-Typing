@@ -4,3 +4,12 @@
     flex-direction: column;
     min-height: 80vh;
 }
+@media screen and (max-width: 342px){
+    #home_title{
+        font-size:1.5rem;
+    }
+    #home_desc{
+        font-size: 1rem;
+        margin-left: 4px;
+    }
+}

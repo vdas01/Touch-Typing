@@ -1,12 +1,12 @@
 .container{
     display: flex;
     flex-direction: column;
-
 }
 .video{
     display: flex;
     align-items: center;
     gap: 2rem;
+    
 }
 #prev, #next{
     font-size: 2rem;
@@ -51,4 +51,15 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(4.1px);
 -webkit-backdrop-filter: blur(4.1px);
 border: 1px solid rgba(13, 255, 13, 0.24);
+}
+@media screen and (max-width: 924px) {
+.video{
+    flex-direction: column;
+}
+#video{
+    width: 90vw;
+}
+.boxx{
+    width: 6vw;
+}
 }

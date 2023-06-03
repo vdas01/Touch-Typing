@@ -10,9 +10,10 @@
    cursor: pointer;
  
 }
+
 .input_box{
     display: flex;
-    gap: 6px;
+    gap: 2%;
 }
 #timee_input{
   padding:1px 4px; 
@@ -40,4 +41,11 @@ border-bottom-style: inset;
 #desc{
     font-weight:400;
     color: rgb(88, 87, 87);
+}
+@media screen and (max-width: 342px) {
+  .input_box{
+    flex-direction: column;
+    gap: 5px;
+  }
+    
 }

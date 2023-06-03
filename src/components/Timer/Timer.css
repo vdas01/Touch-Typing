@@ -31,3 +31,21 @@
     background-color: goldenrod;
 }
 
+@media screen and (max-width: 602px){
+ #time{
+    font-size: 90%;
+ }
+ .btn{
+    font-size: 90%;
+ }
+ .timer{
+    gap: 1%;
+ }
+
+}
+@media screen and (max-width: 285px){
+    .timer{
+        flex-direction: column;
+        gap: 5%;
+     }
+}
