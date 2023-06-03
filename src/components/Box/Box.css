@@ -4,10 +4,24 @@
     justify-content: center;
     /* align-items: center; */
     background-color: bisque;
-   padding: 10px;
+   padding: 12px;
    border-radius: 10px;
    width: 400px;
    cursor: pointer;
+ 
+}
+.input_box{
+    display: flex;
+    gap: 6px;
+}
+#timee_input{
+  padding:1px 4px; 
+  background-color: rgb(180, 213, 237); 
+  color: black;
+}
+#timee_submit{
+    background-color:black;
+    color: goldenrod;
 }
 .box:hover{
     box-shadow: 4px 3px 5px 1px rgba(23,23,24,0.75);
