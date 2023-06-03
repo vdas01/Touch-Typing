@@ -15,6 +15,7 @@ export default function MyTimer({ expiryTimestamp,duration,setInputdisabled ,cor
   
   useEffect(() => {
     setInputdisabled(!isRunning);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isRunning]);
 
     return (
