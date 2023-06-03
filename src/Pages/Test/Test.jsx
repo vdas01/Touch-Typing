@@ -44,6 +44,7 @@ const check = (e)=>{
       elem_key.style.backgroundColor = "green";
       setIndex(prev => prev+1)
       correct.current+=1;
+      add();
   }
   else if (typekey.current !==  initialkeys[index]){
      console.log("Wrong");
@@ -52,6 +53,7 @@ const check = (e)=>{
       elem_key.style.backgroundColor = "red";
       setIndex(prev => prev+1)
       wrong.current+=1;
+      add();
   }
 }
 
