@@ -32,6 +32,7 @@ const Test = () => {
                 add();
         }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 
@@ -68,6 +69,7 @@ const Test = () => {
 
       useEffect(()=>{
         checkAccuracy();
+         // eslint-disable-next-line react-hooks/exhaustive-deps
       },[correct.current,wrong.current])
 
       let textarea = document.getElementById('keys_box');
