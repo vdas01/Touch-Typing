@@ -46,6 +46,10 @@ border-bottom-style: inset;
   .input_box{
     flex-direction: column;
     gap: 5px;
+    
+  }
+  #timee_input,#timee_submit{
+    width:70%;
   }
     
 }

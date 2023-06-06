@@ -80,7 +80,6 @@ padding: 20px;
     font-weight: bold;
     position: relative;
     padding: 25px 10px;
-    font-weight: bold;
     border-radius: 10px;
 }
 #close{
@@ -89,6 +88,12 @@ padding: 20px;
     right: 15px;
     font-size: 1.8rem;
     font-weight: bold;
+    cursor: pointer;
+}
+#save_btn{
+    padding: 10px 2rem;
+    background-color: red;
+    font-size: 1rem;
     cursor: pointer;
 }
 #correct_info,#wrong_info,#accuracy_info,#time_input{
@@ -114,8 +119,12 @@ box-shadow: 7px 5px 5px 0px rgba(0,0,0,0.75);
     #test_title{
         font-size: 1.5rem;
     }
+    #alert_container{
+        min-width:70%;
+    
+    }
+    #alert_container>h3{
+        margin-top: 1rem;
+    }
 }
 
-.wrong_key{
-    background-color: red !important;
-}

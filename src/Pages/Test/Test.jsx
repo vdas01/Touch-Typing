@@ -1,7 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import "./Test.css"
 import MyTimer from '../../components/Timer/Timer';
+import { StoreContext } from '../../context/StoreContext';
+
 
 
 const Test = () => {
@@ -19,6 +21,8 @@ const Test = () => {
  const correct = useRef(0);
  const wrong = useRef(0);
   const [index,setIndex] = useState(0)
+
+  const {dispatch} = useContext(StoreContext);
 
   const add = ()=>{
     setInitialkeys(prev => [...prev,keys[Math.floor(Math.random()*(keys.length))]]);
@@ -38,7 +42,7 @@ const check = (e)=>{
   typekey.current = e.target.value;
         if(typekey.current === ""){}
   else if(typekey.current === initialkeys[index]){
-       console.log("correct")
+     
       let elem_key = document.getElementById(`${index}`)
     
       elem_key.style.backgroundColor = "green";
@@ -47,7 +51,7 @@ const check = (e)=>{
       add();
   }
   else if (typekey.current !==  initialkeys[index]){
-     console.log("Wrong");
+     
      let elem_key = document.getElementById(`${index}`)
      
       elem_key.style.backgroundColor = "red";
@@ -73,13 +77,18 @@ let textarea = document.getElementById('keys_box');
 
       const time = new Date();
       time.setSeconds(time.getSeconds() + duration); 
-
+   
+      const savedResult = ()=>{
+        dispatch({type:"SAVED",payload:{correct,wrong,speed,accuracy,duration}})
+        setShowalert(false);
+        navigate("/");
+      }
     
       const finish = ()=>{
         setShowalert(false);
         navigate("/");
       }
-
+     
   return (
     <div className='test'>
             {<div className="container">
@@ -98,7 +107,8 @@ let textarea = document.getElementById('keys_box');
                    }
                    </div>
 
-                   <input type="text" ref = {typekey} onChange={(e)=>check(e)} id='input' disabled={inputdisabled}/>
+                   <input type="text" ref = {typekey} onChange={(e)=>check(e)} id='input' disabled={inputdisabled} autoComplete='off'/>
+                  
             </div>
           }
           {showalert &&  <>
@@ -111,8 +121,9 @@ let textarea = document.getElementById('keys_box');
                  <span id='speed'>Speed:- {speed} wpm</span>
                  <span id='accuracy'>Accuracy:- {accuracy}</span>
                  <span id='close' onClick={()=>finish()}>{"x"}</span>
+                 <button id="save_btn" onClick={()=>savedResult()}>Save Result</button>
                </div>
-            
+           
             </div>
 
        

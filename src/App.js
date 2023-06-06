@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import Tutorial from './Pages/Tutorial/Tutorial'
 import Test from './Pages/Test/Test'
 import Footer from './components/Footer/Footer'
+import Chart from './Pages/Chart/Chart'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
            <Route path='/' element={<Home/>}/>
            <Route path='/tut' element={<Tutorial/>}/>
            <Route path="/test/:type" element={<Test/>}/>
+           <Route path='/chart' element={<Chart/>}/>
         </Routes>
         <Footer/>
     </div>

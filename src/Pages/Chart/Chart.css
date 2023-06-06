@@ -1,0 +1,32 @@
+.chart{
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(132deg, rgb(251, 251, 255) 0.00%, rgb(215, 223, 252) 100.00%);
+}
+table, th, td {
+    border:1px solid black;
+    width: auto;
+
+  }
+  td{
+    padding: 5px 8px;
+    background: linear-gradient(132deg, rgb(125, 199, 144) 0.00%, rgb(11, 59, 23) 100.00%);
+    font-weight: bold;
+  }
+  th{
+    background-color: black;
+    color: goldenrod;
+    padding: 5px 8px;
+  }
+  #xaxis{
+    color: black;
+  }
+  @media screen and (max-width: 653px){
+   
+    .chart .container #linechart{
+        width: 90vw;
+    }
+}
