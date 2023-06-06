@@ -3,6 +3,7 @@
    align-items: center;
     flex-direction: column;
     min-height: 80vh;
+    background: linear-gradient(132deg, rgb(251, 165, 116) 0.00%, rgb(216, 245, 251) 100.00%);
 }
 #home_btn{
     display: flex;

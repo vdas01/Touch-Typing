@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    background-color: bisque;
+    background: linear-gradient(132deg, rgb(249, 202, 120) 0.00%, rgb(212, 206, 169) 50.00%, rgb(172, 192, 191) 100.00%);
    padding: 12px;
    border-radius: 10px;
    width: 400px;

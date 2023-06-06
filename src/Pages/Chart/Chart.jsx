@@ -11,7 +11,8 @@ const Chart = () => {
     <div className='chart'>
       <h2>Compare and improve your speed and accuracy</h2>
        <div className="container">
-          <LineChart width={730} height={250} data={data}  margin={{ top: 5, right: 30, left: 20, bottom: 5 }} id='linechart'>
+     
+          <LineChart width={730} height={250}  data={data}  margin={{ top: 5, right: 30, left: 20, bottom: 5 }} id='linechart'>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="duration" id='xaxis'/>
           <YAxis  id='yaxis'/>
@@ -20,6 +21,7 @@ const Chart = () => {
           <Line type="monotone" dataKey="acurracyr" stroke="#8884d8" />
           <Line type="monotone" dataKey="speedr" stroke="#82ca9d" />
            </LineChart>
+
        </div>
      <h3>Detailed Analysis:-</h3>
      <table>

@@ -14,10 +14,10 @@ const Home = () => {
   
   return (
     <div className='home'>
-      <h2 id='home_title'>Online Typing Speed Test Tool</h2>
+      <h2 id='home_title'>Typing Speed Test Tool</h2>
       <h3 id='home_desc'>Practice with custom timer and become the fastest TypingNinja</h3>
       <div id="home_btn">
-      {stored_arr.length > 1 && 
+      {stored_arr.length > 0 && 
      <Link to= "/chart" >
          <button id="compare">Compare your results</button>
       </Link>

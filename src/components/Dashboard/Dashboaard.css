@@ -1,5 +1,5 @@
 .dashboard{
-    background-color: pink;
+    background: linear-gradient(132deg, rgb(3, 148, 108) 0.00%, rgb(33, 35, 34) 100.00%);
     display: flex;
     gap: 10px;
     flex-wrap: wrap;

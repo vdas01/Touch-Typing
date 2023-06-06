@@ -2,6 +2,7 @@
     height: 100vh;
     display: flex;
     gap: 10px;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(132deg, rgb(251, 251, 255) 0.00%, rgb(215, 223, 252) 100.00%);
@@ -23,10 +24,16 @@ table, th, td {
   }
   #xaxis{
     color: black;
+ 
   }
+  #linechart{
+    width: 50vw;
+
+  }
+ 
   @media screen and (max-width: 653px){
-   
-    .chart .container #linechart{
-        width: 90vw;
-    }
+ 
+  #linchart{
+    border: 2px solid black;  
+  }
 }
