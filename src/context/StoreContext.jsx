@@ -16,7 +16,7 @@ const StoreReducer = (state,action) =>{
             wrong_keysr: action.payload.wrong.current,
             speedr: action.payload.speed,
             acurracyr:action.payload.accuracy,
-            duration:action.payload.duration
+            duration:(action.payload.duration/60)
            })
         }
         case "CLEAR":
